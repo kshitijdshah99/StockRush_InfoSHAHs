@@ -46,18 +46,18 @@ wsServer.on("request", request => {
             const clientId = result.clientId;
             const gameId = result.gameId;
             const game = games[gameId];
-            if (game.clients.length >= 3) 
+            if (game.clients.length >= 5) 
             {
                 //sorry max players reach
                 return;
             }
-            const color =  {"0": "Red", "1": "Green", "2": "Blue"}[game.clients.length]
+            const color =  {"0": "Red", "1": "Green", "2": "Blue","3": "Yellow","4": "Violet"}}}[game.clients.length]
             game.clients.push({
                 "clientId": clientId,
                 "color": color
             })
             //start the game
-            if (game.clients.length === 3) updateGameState();
+            if (game.clients.length === 5) updateGameState();
 
             const payLoad = {
                 "method": "join",
