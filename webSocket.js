@@ -1,129 +1,119 @@
 const http = require("http");
-const app = require("express")();
-app.get("/", (req,res)=> res.sendFile(__dirname + "/index.html"))
+const express = require("express");
+const websocketServer = require("websocket").server;
 
-app.listen(9091, ()=>console.log("Listening on http port 9091"))
-const websocketServer = require("websocket").server
-const httpServer = http.createServer();
-httpServer.listen(9090, () => console.log("Listening.. on 9090"))
-//hashmap clients
+const app = express();
+const server = http.createServer(app);
+
+app.get("/", (req, res) => res.sendFile(__dirname + "/index.html"));
+
+server.listen(9090, () => console.log("WebSocket Server Listening on 9090"));
+
+const wsServer = new websocketServer({
+  httpServer: server,
+});
+
+// Hashmap to store clients and games
 const clients = {};
 const games = {};
 
-const wsServer = new websocketServer({
-    "httpServer": httpServer
-})
-wsServer.on("request", request => {
-    //connect
-    const connection = request.accept(null, request.origin);
-    connection.on("open", () => console.log("opened!"))
-    connection.on("close", () => console.log("closed!"))
-    connection.on("message", message => {
-        const result = JSON.parse(message.utf8Data)
-        //I have received a message from the client
-        //a user want to create a new game
-        if (result.method === "create") {
-            const clientId = result.clientId;
-            const gameId = guid();
-            games[gameId] = {
-                "id": gameId,
-                "balls": 20,
-                "clients": []
-            }
+wsServer.on("request", (request) => {
+  // Connect
+  const connection = request.accept(null, request.origin);
+  connection.on("open", () => console.log("WebSocket Connection Opened!"));
+  connection.on("close", () => console.log("WebSocket Connection Closed!"));
 
-            const payLoad = {
-                "method": "create",
-                "game" : games[gameId]
-            }
+  connection.on("message", (message) => {
+    const result = JSON.parse(message.utf8Data);
 
-            const con = clients[clientId].connection;
-            con.send(JSON.stringify(payLoad));
-        }
+    // User wants to create a new game room
+    if (result.method === "create") {
+      const clientId = result.clientId;
+      const gameId = guid();
+      games[gameId] = {
+        id: gameId,
+        players: 0,
+      };
 
-        //a client want to join
-        if (result.method === "join") {
+      const payLoad = {
+        method: "create",
+        game: games[gameId],
+      };
 
-            const clientId = result.clientId;
-            const gameId = result.gameId;
-            const game = games[gameId];
-            if (game.clients.length >= 5) 
-            {
-                //sorry max players reach
-                return;
-            }
-            const color =  {"0": "Red", "1": "Green", "2": "Blue","3": "Yellow","4": "Violet"}}}[game.clients.length]
-            game.clients.push({
-                "clientId": clientId,
-                "color": color
-            })
-            //start the game
-            if (game.clients.length === 5) updateGameState();
-
-            const payLoad = {
-                "method": "join",
-                "game": game
-            }
-            //loop through all clients and tell them that people has joined
-            game.clients.forEach(c => {
-                clients[c.clientId].connection.send(JSON.stringify(payLoad))
-            })
-        }
-        //a user plays
-        if (result.method === "play") {
-            const gameId = result.gameId;
-            const ballId = result.ballId;
-            const color = result.color;
-            let state = games[gameId].state;
-            if (!state)
-                state = {}
-            
-            state[ballId] = color;
-            games[gameId].state = state;
-            
-        }
-
-    })
-
-    //generate a new clientId
-    const clientId = guid();
-    clients[clientId] = {
-        "connection":  connection
+      const con = clients[clientId].connection;
+      con.send(JSON.stringify(payLoad));
     }
 
+    // User wants to join a game room
+    if (result.method === "join") {
+      const clientId = result.clientId;
+      const gameId = result.gameId;
+      const game = games[gameId];
+
+      if (game.players >= 5) {
+        // Max players reached
+        return;
+      }
+
+      const color = ["Red", "Green", "Blue", "Yellow", "Violet"][game.players];
+      game.players++;
+
+      const payLoad = {
+        method: "join",
+        game,
+        color,
+      };
+
+      // Loop through all clients and tell them that someone has joined
+      Object.values(clients).forEach((client) => {
+        client.connection.send(JSON.stringify(payLoad));
+      });
+    }
+
+    // Additional game logic for a stock market game can be added here
+
+  });
+
+  // Generate a new clientId
+  const clientId = guid();
+  clients[clientId] = {
+    connection,
+  };
+
+  const payLoad = {
+    method: "connect",
+    clientId,
+  };
+
+  // Send back the client connection message
+  connection.send(JSON.stringify(payLoad));
+});
+
+// Function to periodically update game state
+function updateGameState() {
+  for (const g of Object.keys(games)) {
+    const game = games[g];
     const payLoad = {
-        "method": "connect",
-        "clientId": clientId
-    }
-    //send back the client connect
-    connection.send(JSON.stringify(payLoad))
+      method: "update",
+      game,
+    };
 
-})
+    // Send the updated game state to all connected clients
+    Object.values(clients).forEach((client) => {
+      client.connection.send(JSON.stringify(payLoad));
+    });
+  }
 
-
-function updateGameState(){
-
-    //{"gameid", fasdfsf}
-    for (const g of Object.keys(games)) {
-        const game = games[g]
-        const payLoad = {
-            "method": "update",
-            "game": game
-        }
-
-        game.clients.forEach(c=> {
-            clients[c.clientId].connection.send(JSON.stringify(payLoad))
-        })
-    }
-
-    setTimeout(updateGameState, 500);
+  setTimeout(updateGameState, 500);
 }
 
-
+// Start the periodic update of game state
+updateGameState();
 
 function S4() {
-    return (((1+Math.random())*0x10000)|0).toString(16).substring(1); 
+  return (((1 + Math.random()) * 0x10000) | 0).toString(16).substring(1);
 }
- 
-// then to call it, plus stitch in '4' in the third group
-const guid = () => (S4() + S4() + "-" + S4() + "-4" + S4().substr(0,3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
- 
+
+// Function to generate a new GUID
+const guid = () =>
+  (S4() + S4() + "-" + S4() + "-4" + S4().substr(0, 3) + "-" + S4() + "-" + S4() + S4() + S4()).toLowerCase();
