@@ -1,0 +1,85 @@
+/* index.css */
+
+/* Add more styles as needed */
+
+/* Button styles */
+.custom-button {
+  background-color: yellow;
+  font-weight: bold;
+  /* Add more styles as needed */
+}
+
+/* Image styles */
+.custom-image {
+  max-width: 80%;
+  height: auto;
+  margin-left: 30%;
+  margin-bottom: 100px;
+  /* Add more styles as needed */
+}
+
+.body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.footer {
+  position: relative;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin-bottom: 200px;
+  padding: 20px;
+  /* Add your desired padding value */
+}
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.center-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.columns-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.column {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-title {
+  text-align: center;
+}
+
+.link {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.link-hover:hover {
+  /* Add your hover styles */
+}
+
+.empty-row {
+  height: 20px;
+}
