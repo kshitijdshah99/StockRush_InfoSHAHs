@@ -1,4 +1,4 @@
-const User = require('../models/User');
+const User_Profile = require('../Models/8.USER_PROF');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
@@ -10,7 +10,7 @@ const handleLogin = async (req, res) => {
         return;
     }
     //check for username in DB
-    const foundUser = await User.findOne({username}).exec();
+    const foundUser = await User_Profile.findOne({username}).exec();
     if(!foundUser) {
         res.status(401).send('Username or password is incorrect');
         return;
@@ -25,7 +25,7 @@ const handleLogin = async (req, res) => {
                 {
                     "userInfo": {
                         "username": foundUser.username, 
-                        "roles": roles
+                        // "roles": roles
                     }
                 },
                 process.env.ACCESS_TOKEN_SECRET, 
@@ -35,7 +35,7 @@ const handleLogin = async (req, res) => {
                 {
                     "userInfo": {
                         "username": foundUser.username, 
-                        "roles": roles
+                        // "roles": roles
                     }
                 }, 
                 process.env.REFRESH_TOKEN_SECRET, 

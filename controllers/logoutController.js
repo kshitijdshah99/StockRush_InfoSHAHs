@@ -1,4 +1,4 @@
-const User = require('../models/User');
+const User_Profile = require('../Models/8.USER_PROF');
  
 const handleLogout = async (req, res) => {
     // Note for Frontend: on client also delete the access token
@@ -6,7 +6,7 @@ const handleLogout = async (req, res) => {
     if(!cookies?.jwt) return res.sendStatus(204); //No content
     const refreshToken = cookies.jwt;
     //Is refreshToken in DB?
-    const foundUser = await User.findOne({refreshToken}).exec();
+    const foundUser = await User_Profile.findOne({refreshToken}).exec();
     if(!foundUser) { //no user but cookie exists
         res.clearCookie('jwt', {httpOnly: true, sameSite:'None'});
         return res.sendStatus(204);

@@ -1,4 +1,4 @@
-const User = require('../models/User');
+const User_Profile = require('../Models/8.USER_PROF');
 const jwt = require('jsonwebtoken');
 
 const handleRefreshToken = async (req, res) => {
@@ -10,7 +10,7 @@ const handleRefreshToken = async (req, res) => {
     res.clearCookie('jwt', { httpOnly: true, sameSite: 'None' });
 
     // Check for username, email, and password in DB
-    const foundUser = await User.findOne({ refreshToken }).exec();
+    const foundUser = await User_Profile.findOne({ refreshToken }).exec();
     if (!foundUser || foundUser.email_id !== req.body.email_id || foundUser.password !== req.body.password) {
         return res.sendStatus(401); // Unauthorized
     }

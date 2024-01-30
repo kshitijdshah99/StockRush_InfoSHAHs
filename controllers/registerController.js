@@ -1,4 +1,4 @@
-const User = require('../models/User');
+const User_Profile = require('../Models/8.USER_PROF');
 const bcrypt = require('bcrypt');
 
 const handleNewUser = async (req, res) => {
@@ -10,8 +10,8 @@ const handleNewUser = async (req, res) => {
     }
 
     // Check for duplicate username or email_id in DB
-    const duplicateUsername = await User.findOne({ username }).exec();
-    const duplicateEmail = await User.findOne({ email_id }).exec();
+    const duplicateUsername = await User_Profile.findOne({ username }).exec();
+    const duplicateEmail = await User_Profile.findOne({ email_id }).exec();
 
     if (duplicateUsername || duplicateEmail) {
         res.status(409).send('Username or email_id already exists');
@@ -23,7 +23,7 @@ const handleNewUser = async (req, res) => {
         const hashedPassword = await bcrypt.hash(password, 10);
 
         // Add new user to DB
-        const result = await User.create({
+        const result = await User_Profile.create({
             username,
             password: hashedPassword,
             email_id,
