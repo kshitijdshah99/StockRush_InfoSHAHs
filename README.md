@@ -1,1 +1,0 @@
-# Inheritance-Stock-Market-Game
