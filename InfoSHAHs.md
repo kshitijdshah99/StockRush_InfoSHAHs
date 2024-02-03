@@ -54,3 +54,23 @@ Embark on our Stock Market Game with an added edge – featuring a sophisticated
 ### Assets
 - [GitHub Repo](https://github.com/kshitijdshah99/Inheritance-Stock_Market_Game)
 - [Drive link for Recordings & Screenshots]
+
+### Backend
+- [Stock_Market_Game Server](Add Link Here)
+- [Stock_Market_Game Model Deployment](Add Link Here)
+
+## 👩‍💻Contributors
+
+Team members
+
+- [**P**ratham Shah](https://github.com/pratham) - sarvagnyapurohit@gmail.com
+- [**L**abdhi Shah](https://github.com/toshan-luktuke) - toshan1603@gmail.com
+- [**V**atsal Shah](https://github.com/alisha-kamat) - alishakamat8@gmail.com
+- [**K**shitij Shah](https://github.com/RushabhM03) - rushabh.maru123@gmail.com
+
+## 👨‍🏫Mentors
+
+- [Utsav Khatu](https://github.com/utsavk28)
+- [Vishal Patil](https://github.com/vishalpatil18)
+- [Mithilesh Patil](https://www.youtube.com/watch?v=dQw4w9WgXcQ)
+- [Atharva Alshi](https://github.com/atharva1608)
