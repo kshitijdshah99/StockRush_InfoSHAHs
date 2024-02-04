@@ -98,10 +98,10 @@ Embark on our Stock Market Game with an added edge – featuring a sophisticated
 
 Team members
 
-- [**P**ratham Shah](https://github.com/prathamcoders) - sarvagnyapurohit@gmail.com
-- [**L**abdhi Shah](https://github.com/) - toshan1603@gmail.com
-- [**V**atsal Shah](https://github.com/VSCODER00) - alishakamat8@gmail.com
-- [**K**shitij Shah](https://github.com/kshitijdshah99) - rushabh.maru123@gmail.com
+- [**P**ratham Shah](https://github.com/prathamcoders) - pratham.shah.ps000@gmail.com
+- [**L**abdhi Shah](https://github.com/) - @gmail.com
+- [**V**atsal Shah](https://github.com/VSCODER00) - @gmail.com
+- [**K**shitij Shah](https://github.com/kshitijdshah99) - kshitij.d.shah.999@gmail.com
 
 ## 👨‍🏫Mentors
 
