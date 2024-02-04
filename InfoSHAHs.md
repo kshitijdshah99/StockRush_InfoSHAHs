@@ -100,7 +100,7 @@ Team members
 
 - [**P**ratham Shah](https://github.com/prathamcoders) - sarvagnyapurohit@gmail.com
 - [**L**abdhi Shah](https://github.com/) - toshan1603@gmail.com
-- [**V**atsal Shah](https://github.com/vscoders00) - alishakamat8@gmail.com
+- [**V**atsal Shah](https://github.com/VSCODER00) - alishakamat8@gmail.com
 - [**K**shitij Shah](https://github.com/kshitijdshah99) - rushabh.maru123@gmail.com
 
 ## 👨‍🏫Mentors
