@@ -3,11 +3,11 @@
     <img src="./Untitled.png" alt="CoC Inheritance 2023" width="500" height="166">
   </a>
   <br>
-  STOCK-MARKET-GAME
+  StockRush
 </h1>
 
 <div align="center">
-   <strong>Stock-Market-Game</strong> - One Sentence Description of your project<br>
+   <strong>StockRush</strong> - Invest Smart, Play Smarter<br>
   CoC Inheritance 2023 || InfoSHAHs <br> <br>
 </div>
 <hr>
@@ -19,10 +19,10 @@
 - [Links](#links)
 - [Tech Stack](#tech-stack)
 - [Progress](#progress)
-- [Future Scope](#future-scope)
-- [Applications](#applications)
-- [Project Setup](#project-setup)
-- [Usage](#usage)
+
+
+
+
 - [Team Members](#team-members)
 - [Mentors](#mentors)
 - [Screenshots](#screenshots)
@@ -32,16 +32,20 @@
   <table>
   <tr>
     <td>
-Embark on our Stock Market Game with an added edge – featuring news headlines and change in stock prices empowering you to make informed investment decisions based on market sentiment trends.
+In our dynamic stock trading game, players sign in for five rounds of strategic investment. They buy and sell shares in a real-time market shaped by news generated through a machine learning model. The multiplayer setup ensures a lively, competitive experience, making financial learning both entertaining and engaging.
 <br><br>
-      The <strong>Stock-Market-Game</strong> consists of:
+      The <strong>Key Features</strong> are:
       <ul>
-<li> <b>10</b> Sectors
-<li> <b>50</b> Stocks
-<li> <b>100+</b> Real Time News Headlines
-<li> Invest Smart, Play Smarter
-      </ul>
-    </td>
+<li> <b>Multiplayer Interaction: Interact with fellow players in real-time, sharing insights and strategies.
+</b> 
+<li> <b>Strategic Decision-Making: Make informed decisions based on news updates and market conditions.
+</b>
+<li> <b>Dynamic Stock Market: Experience the volatility of a dynamic stock market influenced by machine learning-generated news.
+<li>Limited Shares: Manage your portfolio with a maximum limit of 20 shares per company.</li></b> 
+
+
+
+     
   </tr>
   </table>
 
@@ -75,28 +79,29 @@ Embark on our Stock Market Game with an added edge – featuring news headlines 
 <a href="fastapi">
 ## 📈Progress
 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x] 
-- [x]
-- [x] 
-- [x] 
-- [x] 
-- [x] 
+- [x] Multi-Round Gameplay: The game consists of 5 rounds where players engage in stock trading activities.  
+- [x] ML-Generated News: Each round is accompanied by ML-generated news which impacts stock prices based on its intensity.
+- [x] Web Socket Waiting Room: Implemented a waiting room using web sockets where up to 5 players can join before the game begins.
+- [x] Sector and Company Structure: Incorporated a structure comprising 10 sectors with 5 companies each, offering a diverse trading environment.
+- [x] Share Limit: Users are restricted to buying a maximum of 20 shares per company to maintain fair gameplay.
+    
+- [ ] Advanced Stock Price Manipulation: Intended to enhance the sophistication of stock price manipulation algorithms for a more dynamic market experience.
+- [ ] Enhanced User Interaction: Plan to integrate additional features to enhance user interaction and engagement within the game environment.
+- [ ] Leaderboards: The leaderboard feature is in progress, aiming to allow players to track their progress, but it is not yet fully functional or refined.
+
+
 
 ## 👩‍💻Team members
 
 - [**P**ratham Shah](https://github.com/prathamcoders) - pratham.shah.ps000@gmail.com
-- [**L**abdhi Shah](https://github.com/) - @gmail.com
-- [**V**atsal Shah](https://github.com/VSCODER00) - @gmail.com
+- [**L**abdhi Shah](https://github.com/) - labdhishah2004@gmail.com
+- [**V**atsal Shah](https://github.com/VSCODER00) - vatsalshah1290@gmail.com
 - [**K**shitij Shah](https://github.com/kshitijdshah99) - kshitij.d.shah.999@gmail.com
 
 ## 👨‍🏫Mentors
 
 - [Shaurya Swarup](https://github.com/)
 - [Dhruv Sapra](https://github.com/)
+
+## Screenshots
 
