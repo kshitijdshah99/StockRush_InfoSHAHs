@@ -114,4 +114,8 @@ In our dynamic stock trading game, players sign in for five rounds of strategic 
 - [Dhruv Sapra](https://github.com/)
 
 ## Screenshots
-
+<h1 align="center">
+  <a href="https://github.com/CommunityOfCoders/Inheritance-2023">
+    <img src="./inh2.jpg" alt="CoC Inheritance 2023" width="500" height="166">
+  </a>
+  </h1>
