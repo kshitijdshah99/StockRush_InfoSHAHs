@@ -37,7 +37,6 @@ The backend server will start running on `http://localhost:4000`.
 ## Learn More
 
 - FastAPI: [Official Documentation](https://fastapi.tiangolo.com/)
-- MongoDB: [Official Documentation](https://docs.mongodb.com/)
 - Node.js: [Official Documentation](https://nodejs.org/en/docs/)
 - Express.js: [Official Documentation](https://expressjs.com/)
 - MongoDB: [Official Documentation](https://docs.mongodb.com/)
