@@ -59,7 +59,6 @@ In our dynamic stock trading game, players sign in for five rounds of strategic 
 
 ### Backend
 - [**Backend_Model_Deployment**](https://github.com/kshitijdshah99/Inheritance-Stock_Market_Game/tree/Kshitij)📈
-- [Stock_Market_Game Model Deployment](Add Link Here)
 
 ## 🤖Tech-Stack
 <a href="https://www.python.org/" title="Python"><img src="https://github.com/get-icon/geticon/raw/master/icons/python.svg" alt="Python" width="31px" height="31px"></a>
