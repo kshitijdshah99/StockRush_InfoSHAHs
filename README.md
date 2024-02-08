@@ -30,9 +30,9 @@ The backend server will start running on `http://localhost:4000`.
 - **GET /api/resource**: Retrieves all resources.
 - **POST /api/resource**: Creates a new resource.
 - **GET /api/resource/:id**: Retrieves a specific resource by ID.
-- **PUT /api/resource/:id**: Updates a specific resource by ID.
+- **PATCH /api/resource/:id**: Updates a specific resource by ID.
 - **DELETE /api/resource/:id**: Deletes a specific resource by ID.
-- 
+
 
 ## Learn More
 
