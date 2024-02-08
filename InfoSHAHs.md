@@ -7,7 +7,7 @@
 </h1>
 
 <div align="center">
-   <strong>StockRush</strong> - Invest Smart, Play Smarter<br>
+   <strong>StockRush💲💱</strong> - Invest Smart, Play Smarter<br>
   CoC Inheritance 2023 || InfoSHAHs <br> <br>
 </div>
 <hr>
