@@ -9,7 +9,6 @@
 <div align="center">
    <strong>Stock-Market-Game</strong> - One Sentence Description of your project<br>
   CoC Inheritance 2023 || InfoSHAHs <br> <br>
-  Add any <a href="https://shields.io/">Shields</a> here
 </div>
 <hr>
 
