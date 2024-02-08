@@ -1,0 +1,55 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.overflow-x-auto {
+    /*width: 100%;*/
+    height: 100%;
+    overflow-x: auto;
+    display: flex;
+    flex-direction: column;
+    margin: 30px;
+}
+
+.table {
+    width: 100%;
+    height: 100%;
+    border-collapse: collapse;
+}
+
+.table-button {
+    padding: 8px;
+    border: none;
+    color: black;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding: 8px;
+    text-align: center;
+    border: 1px solid coral;
+}
+
+.table-zebra td {
+    padding: 25px;
+}
+
+.table th {
+    background-color: #000000;
+}
+
+.table-zebra tbody tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+/* sectors.css */
+.bg-black {
+    background-color: black;
+    color: #ddd;
+    /* text color for better visibility */
+}

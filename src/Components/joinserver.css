@@ -1,0 +1,34 @@
+.join-server-page {
+    /*background-image: url('./GameCreation/stock market.jpg');
+    /* Adjust the path based on the location of your image file */
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    background-color: black;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(0.8);
+}
+
+
+/* joinserver.css */
+.join-server-container {
+    text-align: center;
+    font-size: 150%;
+    margin-bottom: 30px;
+    color: coral;
+    
+    /* Center the content */
+}
+
+.input-container {
+    margin-top: 10px;
+}
+
+.input-container input {
+    width: 300px;
+    height: 40px;
+}
