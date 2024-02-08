@@ -20,7 +20,6 @@
 - [Tech Stack](#tech-stack)
 - [Progress](#progress)
 - [Future Scope](#future-scope)
-
 - [Team Members](#team-members)
 - [Mentors](#mentors)
 - [Screenshots](#screenshots)
@@ -95,11 +94,11 @@ In our dynamic stock trading game, players sign in for five rounds of strategic 
 - [ ] Need to beautify the homepage.
 
 
-## Future Scope
--Advanced Stock Price Manipulation: Intended to enhance the sophistication of stock price manipulation algorithms for a more dynamic market experience.
--Enhanced User Interaction: Plan to integrate additional features to enhance user interaction and engagement within the game environment.
--Leaderboards: The leaderboard feature is in progress, aiming to allow players to track their progress, but it is not yet fully functional or refined.
--Save data of user and accordingly plot price variation vs duration of the stocks.
+## ✔Future Scope
+- Advanced Stock Price Manipulation: Intended to enhance the sophistication of stock price manipulation algorithms for a more dynamic market experience.
+- Enhanced User Interaction: Plan to integrate additional features to enhance user interaction and engagement within the game environment.
+- Leaderboards: The leaderboard feature is in progress, aiming to allow players to track their progress, but it is not yet fully functional or refined.
+- Save data of user and accordingly plot price variation vs duration of the stocks.
 
 
 ## 👩‍💻Team members
