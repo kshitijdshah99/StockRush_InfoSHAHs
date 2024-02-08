@@ -1,0 +1,72 @@
+/* CreateGame.css */
+.create-game-body {
+    background-image: url('./createserver.png');
+    background-size:contain; /* Use 'cover' to make the image cover the entire container */
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    filter: brightness(0.9);
+}
+
+.card-container {
+    display: flex;
+    justify-content: center; /* Center the cards horizontally */
+    align-items: center; /* Center the cards vertically */
+}
+
+.card {
+    border: coral;
+        width: 300px;
+        text-align: center;
+        border: none;
+        margin: 1px;
+        background-color: black;
+        color: white;/* Add some margin between the cards */
+}
+
+.join-server {
+    font-size: 175%;
+    padding: 12px;
+    background-image: none;
+    border: coral;
+    margin-bottom: 60px;
+
+}
+.create-server{
+    margin-bottom: 45px;
+}
+
+.create-server .btn,
+.join-server .btn {
+    font-size: 40px;
+    /* margin: auto; Center the buttons horizontally */
+    display: block; /* Make the buttons full width */
+    display:inline-block;
+    border-radius:18px;
+    background-color:aqua;
+    transition: all 0.3s ease-in-out;
+        /* Add a smooth transition effect */
+        cursor: pointer;
+        /* Change cursor to pointer on hover */
+        box-shadow: 0 0 10px rgba(0, 0,255, 0);
+            /* Add a blue box-shadow */
+    }
+    
+    .create-server .btn:hover,
+    .join-server .btn:hover {
+        transform: scale(1.1);
+        /* Expand the button on hover */
+        box-shadow: 0 0 28px rgba(0,0,255,0.9);
+            /* Increase the shadow 
+    
+}
+.btn-ghost2{
+/* margin-top: 20px; */
+}
+.card join-server{
+    margin-bottom: 2px;
+}
