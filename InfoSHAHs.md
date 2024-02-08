@@ -52,7 +52,7 @@ In our dynamic stock trading game, players sign in for five rounds of strategic 
   ## 🔗Links
 
 ### Frontend
-- [**Stock-Market-Game**]()📈
+- [**Stock-Market-Game**](https://github.com/kshitijdshah99/Inheritance-Stock_Market_Game/tree/Labdhi)📈
 
 ### Assets
 - [GitHub Repo](https://github.com/kshitijdshah99/Inheritance-Stock_Market_Game)
@@ -92,11 +92,16 @@ In our dynamic stock trading game, players sign in for five rounds of strategic 
 - [x] The news deals with merger, aquisition of companies, new governmental policies and also dynamically changing geopolitics around the globe affecting those specific companies.
 - [x] Performed sentiment analysis of these news and accordingly based on our algorithm varied the stock prices exactly like the real Stock Exchange.
 - [x] Implemented 5 rounds in our game where users would trade amongst themselves at end of those 5 rounds in our game the user with highest profit wins.
-- [x] 
-- [ ] Advanced Stock Price Manipulation: Intended to enhance the sophistication of stock price manipulation algorithms for a more dynamic market experience.
-- [ ] Enhanced User Interaction: Plan to integrate additional features to enhance user interaction and engagement within the game environment.
-- [ ] Leaderboards: The leaderboard feature is in progress, aiming to allow players to track their progress, but it is not yet fully functional or refined.
 
+- [ ] Logout feature yet to be implemented
+- [ ] Need to beautify the homepage.
+
+
+## Future Scope
+-Advanced Stock Price Manipulation: Intended to enhance the sophistication of stock price manipulation algorithms for a more dynamic market experience.
+-Enhanced User Interaction: Plan to integrate additional features to enhance user interaction and engagement within the game environment.
+-Leaderboards: The leaderboard feature is in progress, aiming to allow players to track their progress, but it is not yet fully functional or refined.
+-Save data of user and accordingly plot price variation vs duration of the stocks.
 
 
 ## 👩‍💻Team members
