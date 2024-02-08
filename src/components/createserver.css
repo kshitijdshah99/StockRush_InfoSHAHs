@@ -1,0 +1,61 @@
+/* createserver.css */
+
+.create-server-page {
+    background: url('./GameCreation/stock market.jpg') center/cover no-repeat;
+    /* Replace 'path/to/your/background-image.jpg' with the actual path to your background image */
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+.create-server-container {
+    text-align: center;
+    font-size: 150%;
+    margin-bottom: 20px;
+    /* Add other specific styles for the create-server page */
+}
+
+.create-server-button {
+    /* Add styling for your button here */
+    margin-top: -20px;
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: #3498db;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+.create-room-button {
+    /* Add styling for your button here */
+    margin-top: -20px;
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: blue;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.create-server-button:hover {
+    background-color: #2980b9;
+}
+.tptext{
+    margin-top: 50px;
+    color: white;
+    font-size: 22px;
+}
+
+/* Additional styles specific to create-server component */
+.create-server-input-container {
+    margin-top: 10px;
+}
+
+.create-server-input-container input {
+    width: 300px;
+    height: 40px;
+}
