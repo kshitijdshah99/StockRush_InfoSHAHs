@@ -1,0 +1,122 @@
+.App {
+  text-align:center;
+  color: coral;
+  background-color: #000000;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+button.MuiButtonBase-root.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-fullWidth.MuiButton-root.MuiButton-contained.MuiButton-containedPrimary.MuiButton-sizeMedium.MuiButton-containedSizeMedium.MuiButton-fullWidth.css-1vhaqj4-MuiButtonBase-root-MuiButton-root {
+  background-color: coral;
+}
+
+label#email-label {
+  color: white;
+}
+
+a.MuiTypography-root.MuiTypography-body2.MuiLink-root.MuiLink-underlineAlways.css-101ca9i-MuiTypography-root-MuiLink-root {
+  color: coral;
+  text-decoration-color: coral;
+}
+
+fieldset.MuiOutlinedInput-notchedOutline.css-1d3z3hw-MuiOutlinedInput-notchedOutline {
+  border-color: #ffffff;
+}
+
+label#password-label {
+  color: #ffffff;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+.text-neutral-content .column {
+  float: left;
+  width: 25%;
+}
+
+#myDIV {
+  height: 150px;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  gap: 2px;
+  background-color: #000000;
+  padding: 2px;
+}
+
+#myDIV div {
+  background-color:black;
+  text-align: center;
+  padding: 20px 10px;
+  font-size: 30px;
+  min-width: 130px;
+  margin: 20px;
+  color:white;
+  border:1px solid coral;
+  border-radius:8px;
+  height:150px;
+}
+
+.flex {
+  display: flex;
+}
+
+.child.left {
+  flex: 100px;
+  
+  background:black;
+  margin-left: 10px;
+  
+
+}
+
+.child.right {
+  flex: 80;
+  display: flex;
+  flex-direction: column;
+}
+
+.item1 {
+  grid-column-start: span 1;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+  
+  
+}
+.custom button{
+  height:45pxpx
+
+}
+.grid button{
+  height:80px;
+  font-size: 20px;
+  width:250px}

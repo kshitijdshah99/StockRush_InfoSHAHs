@@ -1,0 +1,25 @@
+/* Rulebook.css */
+
+.rulebook-container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    background-color: black;
+    border-radius: 5px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.rule-section {
+    margin-top: 20px;
+}
+
+.rule-section h2 {
+    color: #3498db;
+}
+
+.rule-section p {
+    margin-bottom: 10px;
+
+}
