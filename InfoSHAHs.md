@@ -19,9 +19,7 @@
 - [Links](#links)
 - [Tech Stack](#tech-stack)
 - [Progress](#progress)
-
-
-
+- [Future Scope](#future-scope)
 
 - [Team Members](#team-members)
 - [Mentors](#mentors)
@@ -78,6 +76,7 @@ In our dynamic stock trading game, players sign in for five rounds of strategic 
 <a href="fastapi">
 ## 📈Progress
 - [x] Home Page has various features with rulebook as it's strinking one, here he would get clear idea of rules of our game.
+- [x] Learn feature enables the player to understand in depth working of stock market and a touch of it's technical terms too.
 - [x] Multi-Round Gameplay: The game consists of 5 rounds where players engage in stock trading activities.  
 - [x] ML-Generated News: Each round is accompanied by ML-generated news which impacts stock prices based on its intensity.
 - [x] Web Socket Waiting Room: Implemented a waiting room using web sockets where up to 5 players can join before the game begins.
@@ -92,7 +91,6 @@ In our dynamic stock trading game, players sign in for five rounds of strategic 
 - [x] The news deals with merger, aquisition of companies, new governmental policies and also dynamically changing geopolitics around the globe affecting those specific companies.
 - [x] Performed sentiment analysis of these news and accordingly based on our algorithm varied the stock prices exactly like the real Stock Exchange.
 - [x] Implemented 5 rounds in our game where users would trade amongst themselves at end of those 5 rounds in our game the user with highest profit wins.
-
 - [ ] Logout feature yet to be implemented
 - [ ] Need to beautify the homepage.
 
