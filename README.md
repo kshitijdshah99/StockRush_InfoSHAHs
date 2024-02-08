@@ -12,7 +12,7 @@
 </div>
 <hr>
 
-<details>
+
 <summary>Table of Contents</summary>
 
 - [Description](#description)
@@ -26,7 +26,7 @@
 - [Team Members](#team-members)
 - [Mentors](#mentors)
 - [Screenshots](#screenshots)
-</details>
+
 
 ## 📝Description
   <table>
