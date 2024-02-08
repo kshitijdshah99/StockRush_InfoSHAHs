@@ -1,0 +1,42 @@
+.footer-nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  background-color: #333;
+  /* Set your desired background color */
+  color: #fff;
+  margin-bottom: 500px;
+  /* Set your desired text color */
+}
+
+.footer-nav nav {
+  flex: 1;
+  text-align: center;
+}
+
+.footer-nav-column {
+  flex: 1;
+  text-align: center;
+  padding: 10px;
+  /* Add padding between columns */
+}
+
+.footer-nav-row {
+  display: block;
+  margin-bottom: 10px;
+  /* Add margin between rows */
+}
+
+.footer-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #ffffff;
+}
+
+.link {
+  display: block;
+  margin-bottom: 5px;
+  color: #ffffff;
+}
