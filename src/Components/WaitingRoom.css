@@ -1,0 +1,32 @@
+/* WaitingRoom.css */
+
+.waiting-room-container {
+    text-align: center;
+    margin: 20px;
+}
+
+.player-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.player-item {
+    background-color: #3498db;
+    color: #ffffff;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 5px;
+    width: 200px;
+}
+.startGame{
+    background-color: greenyellow;
+        color: #ffffff;
+        padding: 10px;
+        margin: 5px;
+        border-radius: 5px;
+        width: 200px;
+        font-size: 30px;
+        
+}
