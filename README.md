@@ -58,7 +58,7 @@ In our dynamic stock trading game, players sign in for five rounds of strategic 
 - [GitHub Repo](https://github.com/kshitijdshah99/Inheritance-Stock_Market_Game)
 
 ### Backend
-- [Stock_Market_Game Server](Add Link Here)
+- [**Backend_Model_Deployment**](https://github.com/kshitijdshah99/Inheritance-Stock_Market_Game/tree/Kshitij)📈
 - [Stock_Market_Game Model Deployment](Add Link Here)
 
 ## 🤖Tech-Stack
@@ -84,7 +84,11 @@ In our dynamic stock trading game, players sign in for five rounds of strategic 
 - [x] Web Socket Waiting Room: Implemented a waiting room using web sockets where up to 5 players can join before the game begins.
 - [x] Sector and Company Structure: Incorporated a structure comprising 10 sectors with 5 companies each, offering a diverse trading environment.
 - [x] Share Limit: Users are restricted to buying a maximum of 20 shares per company to maintain fair gameplay.
-    
+- [x] Implemented Authorization and JWT token, for sign in and sign-up feature for users.
+- [x] Built a waiting room or a server using websockets where different players join to trade among themselves in community based on uniquely generated server code.
+- [x] Robust logic for dynamic manipulation of stock prices in our game based on demand and supply balance.
+- [x] Safer and strict algorithms implemented to give real time experience of stock market and therby prevent stock manipulations by user's in our game.
+- [x] 
 - [ ] Advanced Stock Price Manipulation: Intended to enhance the sophistication of stock price manipulation algorithms for a more dynamic market experience.
 - [ ] Enhanced User Interaction: Plan to integrate additional features to enhance user interaction and engagement within the game environment.
 - [ ] Leaderboards: The leaderboard feature is in progress, aiming to allow players to track their progress, but it is not yet fully functional or refined.
@@ -93,10 +97,10 @@ In our dynamic stock trading game, players sign in for five rounds of strategic 
 
 ## 👩‍💻Team members
 
-- [**P**ratham Shah](https://github.com/prathamcoders) - pratham.shah.ps000@gmail.com
-- [**L**abdhi Shah](https://github.com/) - labdhishah2004@gmail.com
-- [**V**atsal Shah](https://github.com/VSCODER00) - vatsalshah1290@gmail.com
-- [**K**shitij Shah](https://github.com/kshitijdshah99) - kshitij.d.shah.999@gmail.com
+- [Pratham Shah](https://github.com/prathamcoders) - pratham.shah.ps000@gmail.com
+- [Labdhi Shah](https://github.com/) - labdhishah2004@gmail.com
+- [Vatsal Shah](https://github.com/VSCODER00) - vatsalshah1290@gmail.com
+- [Kshitij Shah](https://github.com/kshitijdshah99) - kshitij.d.shah.999@gmail.com
 
 ## 👨‍🏫Mentors
 
