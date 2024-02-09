@@ -22,7 +22,7 @@
 - [Future Scope](#future-scope)
 - [Team Members](#team-members)
 - [Mentors](#mentors)
-- [Screenshots](#screenshots)
+- [Results](#results)
 
 
 ## 📝Description
@@ -113,16 +113,5 @@ In our dynamic stock trading game, players sign in for five rounds of strategic 
 - [Shaurya Swarup](https://github.com/)
 - [Dhruv Sapra](https://github.com/)
 
-## Screenshots
-<h1 align="center">
-  <a href="https://github.com/CommunityOfCoders/Inheritance-2023">
-    <img src="./inh2.jpg" alt="CoC Inheritance 2023" width="400" height="226">              <img src="./inh5.jpg" alt="CoC Inheritance 2023" width="400" height="226">  
-  </a>
-  </h1>
- 
-<h1 align="center">
-  <a href="https://github.com/CommunityOfCoders/Inheritance-2023">
-    <img src="./inh3.jpg" alt="CoC Inheritance 2023" width="400" height="226">  <img src="./inh4.jpg" alt="CoC Inheritance 2023" width="400" height="226">  
-  </a>
-  </h1>
-
+## 🎬RESULTS
+![](https://github.com/kshitijdshah99/StockRush_InfoSHAHs/blob/main/inheritance.gif)
